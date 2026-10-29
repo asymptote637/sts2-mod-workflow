@@ -1,0 +1,4 @@
+interface:
+  display_name: "杀戮尖塔2 Mod 制作与发布"
+  short_description: "从角色资源与代码开发到验证、打包、GitHub 和创意工坊上传"
+  default_prompt: "使用 $sts2-mod-workflow 完成当前杀戮尖塔2 Mod 的制作、验证、打包和指定渠道发布。"

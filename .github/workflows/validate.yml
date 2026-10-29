@@ -1,0 +1,16 @@
+name: Validate skill scripts
+on:
+  push:
+  pull_request:
+jobs:
+  fixture-tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.9', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '${{ matrix.python }}'
+      - run: python scripts/test_workflow.py
